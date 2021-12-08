@@ -1,5 +1,7 @@
 package ma.octo.assignement.domain;
 
+import com.sun.istack.NotNull;
+
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
@@ -23,7 +25,6 @@ public class Virement {
 
   @ManyToOne
   private Compte compteBeneficiaire;
-
   @Column(length = 200)
   private String motifVirement;
 

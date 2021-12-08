@@ -13,7 +13,7 @@ public class Versement {
   private Long id;
 
   @Column(precision = 16, scale = 2, nullable = false)
-  private BigDecimal montantVirement;
+  private BigDecimal montantVersement;
 
   @Column
   @Temporal(TemporalType.TIMESTAMP)
@@ -29,11 +29,11 @@ public class Versement {
   private String motifVersement;
 
   public BigDecimal getMontantVirement() {
-    return montantVirement;
+    return montantVersement;
   }
 
   public void setMontantVirement(BigDecimal montantVirement) {
-    this.montantVirement = montantVirement;
+    this.montantVersement = montantVirement;
   }
 
   public Date getDateExecution() {
